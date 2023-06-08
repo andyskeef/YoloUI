@@ -1,16 +1,11 @@
 /// <reference types="Cypress" />
 
-describe('My Second Test', () => {
+describe('YoloTest', () => {
   it('Add BollyWood Stars to Favourite tab', () => {
-    //cy.visit('https://bombaylobby.com/')
-    //cy.get('[href="https://demo.bombay.live/operator/bombaydemo/bombay-live-lobby/fun"]').click({ force: true })
-    cy.visit('https://demo.bombay.live/operator/bombaydemo/bombay-live-lobby/fun');
-    cy.wait(5000);
 
-    //cy.origin('https://demo.bombay.live/operator/bombaydemo/bombay-live-lobby/fun', () => {
-    //cy.visit('https://demo.bombay.live/operator/bombaydemo/bombay-live-lobby/fun')
-    //cy.url().should('include', "demo.bombay.live")
-    
+    cy.visit('https://demo.bombay.live/operator/bombaydemo/bombay-live-lobby/fun');
+    cy.wait(3000);
+
     const getIframeDocument = () => {
       return cy
         .get('#iframeId')
